@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-size:50px;
+    color:white;
+    padding:10px 15px;
+    height: 15vh;
+    /* position: fixed; */
+}
+
+.logo-img{
+    width:200px;
+}
+.title-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 30px;
+    font-size:25px;
+    background-color: rgb(73, 68, 68);
+    color:white;
+    height: 85vh;
+}
+
+.title-img img{
+    width:500px;
+    border-radius: 10px;
+}
+.title{
+    font-size:50px;
+    margin-bottom: 10px;
+}
+.story{
+    width:85%;
+    padding:10px 15px;
+    background-color: rgb(97, 83, 83);
+    border-radius:5px;
+}
+.list-container{
+    width:100%;
+    font-size:20px;
+    background-color:rgb(158, 137, 137);
+
+}
+
+.list{
+    width:50%;
+    margin:0 auto;
+    list-style-type:circle;
+    color:black;
+    padding:5px 8px;
+    /* height:85vh; */
+    line-height:2;
+}
+
+.footer{
+    background: #000;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding:10px 15px;
+    text-align: center;
+}
+
+.logo-img-footer{
+    width:100px;
+}
+
+.footer-text{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 1px red;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+@media (max-width:800px) {
+    .story{
+        font-size:20px;
+    }
+}
+@media (max-width:700px) {
+   .list{
+    line-height: 1.5;
+    width:80%;
+   }
+
+   #logo{
+    font-size:40px;
+   }
+
+   .container nav img{
+    width: 150px;
+   }
+}
+
+@media (max-width:550px) {
+    .title-img img{
+        width:300px;
+    }
+
+    #logo{
+        font-size:30px;
+       }
+
+       .title{
+        font-size:30px;
+       }
+}
+@media (max-width:450px) {
+ 
+    .title-img{
+        height: auto;
+    }
+    .story{
+        font-size: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    #logo{
+        display: none;
+    }
+
+    .list-container{
+        font-size:16px;
+    }
+}
+
+@media (max-width:350px) {
+    .story{
+        font-size:18px;
+    }
+
+    .footer-text{
+        letter-spacing: 1px;
+    }
+}
